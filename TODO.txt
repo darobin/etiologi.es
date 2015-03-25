@@ -1,0 +1,86 @@
+
+TODO:
+    - write about page
+    - template
+        - CSS basics
+        - fonts
+        - header and footer layout
+    - set up basics of build
+        - 6to5
+        - templating
+        - generating index page
+    - write SOC description
+    - definition indexer
+    - avalanches experiment
+    - browserify
+        - explorable data from offline, larger runs
+    - open questions
+    - sticky headers
+    - random graphs basics
+        - the different properties of the basic random graphs
+        - algorithms to build them
+        - visual explanations of their properties
+    - avalanches on various topologies
+    - NK model
+    - rugged landscapes
+    - RBNs
+    - RBNs on various topologies
+    - the simplest s/b model
+    - metrics on random graphs (http://arxiv.org/abs/1005.1397? SFI video Antoine Allard)
+    - dimensions (time-like, space-like) on a graph through information theoretic notions
+
+BUILD SYSTEM:
+    - 6to5
+    - browserify
+    - nodemon
+    - CSS built to hashed component, cached forever
+    - JS built to several hashed components, depending on the page
+        - need to support dependencies
+    - libs needs to be able to run in the browser but also in Node
+        - it should be possible to run complex computations in S3 or similar
+    - definitions and cross-linking
+
+STYLE:
+    - reprise headers and text style from undefined
+    - and general decoration using patterns generated from http://riccardoscalco.github.io/textures
+
+PROJECTS:
+    - SOC
+        - reprise the demo for undefined
+        - explain it a lot more
+        - more interactive
+        - ask questions, then answer then in code
+            - does topology influence avalanches?
+            - are there rules governing how long a grain of sand stays on the table?
+    - Origins of Order notes
+    - s/b model, a complete implementation
+        - this might enable a tie-in with social evolution
+
+ORGANISATION:
+    - front page lists latest items and categorised items
+    - need a section that is basically just "concepts" and the such (e.g. Criticality)
+    - when any page has an open question, it is extracted and collated in a central list
+    - definitions can be linked to easily
+
+INFORMATION:
+    - about page with goals
+        - short description of self
+        - how to contribute
+
+INSPIRATION:
+    ✓ http://www.maartenlambrechts.be/the-rise-of-explorable-explanations/
+    - http://worrydream.com/ExplorableExplanations/
+    - http://worrydream.com/LadderOfAbstraction/
+    - http://setosa.io/ev/
+    - http://jackschaedler.github.io/circles-sines-signals/index.html
+    - http://bost.ocks.org/mike/algorithms/
+    - http://ncase.me/polygons/
+    - http://blog.ncase.me/explorable-explanations/
+    - http://www.redblobgames.com/pathfinding/a-star/introduction.html
+    - http://www.redblobgames.com/articles/curved-paths/
+    - http://pomax.github.io/bezierinfo
+    - http://www.vizitsolutions.com/portfolio/vfield/
+    - https://camdavidsonpilon.github.io/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers
+    - http://bactra.org/notebooks/complex-networks.html
+    - http://synaptic.juancazala.com/#
+
