@@ -9,6 +9,8 @@ TODO:
         - 6to5
         - templating
         - generating index page
+        - news sources
+    - start rsyncing
     - write SOC description
     - definition indexer
     - avalanches experiment
