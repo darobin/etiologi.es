@@ -1,0 +1,2 @@
+# etiologi.es
+Philosophical tinkering
