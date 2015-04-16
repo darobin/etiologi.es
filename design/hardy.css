@@ -1,0 +1,33 @@
+
+html, body {
+    margin: 0;
+    padding:    0;
+    font-family:    "Roboto Slab";
+    font-weight:    300;
+    min-height: 100vh;
+}
+
+body > header {
+    background: linear-gradient(to bottom, #ed9d3f, #f5d466);
+    
+}
+header > p, header > h1 {
+    width:  960px;
+    margin: auto;
+}
+.site-title {
+    font-size:  57px;
+    color:  #fff;
+    text-align: center;
+    letter-spacing: 38px;
+    text-shadow:    1px 1px 1px #234;
+}
+main > header {
+    background: #fff;
+    border: 1px solid #0E6764;
+}
+h1 {
+    color:  #69c093;
+    font-size:  38px;
+    font-weight:    300;
+}

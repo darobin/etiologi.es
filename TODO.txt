@@ -23,6 +23,7 @@ TODO:
         - algorithms to build them
         - visual explanations of their properties
     - avalanches on various topologies
+    - the Bak brain?
     - NK model
     - rugged landscapes
     - RBNs
@@ -57,6 +58,8 @@ PROJECTS:
     - Origins of Order notes
     - s/b model, a complete implementation
         - this might enable a tie-in with social evolution
+    - WebLogo, port of NetLogo
+    - see #etiologies in Evernote
 
 ORGANISATION:
     - front page lists latest items and categorised items
