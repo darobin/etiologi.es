@@ -3,15 +3,15 @@
     <meta charset="utf-8">
     <title>Title</title>
     <style>
-      .bark {
-          fill: brown;
-          stroke: white;
+      svg {
+          display:  block;
+          margin: auto;
       }
     </style>
   </head>
   <body>
-  <svg width="1000" viewBox="0 0 1000 300" xmlns="http://www.w3.org/2000/svg">
-    <g stroke-width="0.005" stroke="#000" fill="#fff" transform="scale(15) translate(-2, -1.5)">
+  <svg width="960" viewBox="0 0 1000 300" xmlns="http://www.w3.org/2000/svg">
+    <g stroke-width="0.01" stroke="#fff" fill="#fff" transform="scale(15) translate(-2, -1.5)">
       <path d="M 20.45, 6.86 L 21.70, 6.86 L 20.69, 7.59 L 19.44, 7.59 L 20.45, 6.86 z"></path>
       <path d="M 17.81, 2.56 L 19.06, 2.56 L 18.05, 3.29 L 16.80, 3.29 L 17.81, 2.56 z"></path>
       <path d="M 17.81, 8.78 L 19.06, 8.78 L 18.05, 9.51 L 16.80, 9.51 L 17.81, 8.78 z"></path>
@@ -399,8 +399,9 @@
       <path d="M 64.30, 3.74 L 65.55, 3.74 L 65.94, 2.56 L 64.69, 2.56 L 64.30, 3.74 z"></path>
       <path d="M 64.30, 3.74 L 65.55, 3.74 L 64.54, 4.48 L 63.29, 4.48 L 64.30, 3.74 z"></path>
     </g>
-    <path d="M 15,205 L 15,10 L 985,10 L 985,295 L 45,295" fill="none" stroke="#ccc"></path>
+    <xpath d="M 15,205 L 15,10 L 985,10 L 985,295 L 45,295" fill="none" stroke="#ccc"></path>
   </svg>
+  <script src='randomColor.js'></script>
   <script>
     var paths = document.querySelectorAll("path");
     for (var i = 0, n = paths.length; i < n; i++) {
@@ -409,6 +410,22 @@
             console.log(ev.target.getAttribute("data-num"));
         }
     }
+    // random colours
+    var leaves = document.querySelectorAll("g > path:not(.bark)")
+        // hue: red, orange, yellow, green, blue, purple, pink, monochrome
+        // luminosity: light
+    ,   colours = randomColor({ hue: "green", count: leaves.length })
+    ;
+    for (var i = 0, n = leaves.length; i < n; i++)
+        leaves[i].setAttributeNS(null, "fill", colours[i])
+    // random colours - bark
+    var barks = document.querySelectorAll("path.bark")
+        // hue: red, orange, yellow, green, blue, purple, pink, monochrome
+        // luminosity: light
+    ,   barkColours = randomColor({ hue: "orange", count: barks.length })
+    ;
+    for (var i = 0, n = barks.length; i < n; i++)
+        barks[i].setAttributeNS(null, "fill", barkColours[i])
   </script>
 </body>
 </html>
