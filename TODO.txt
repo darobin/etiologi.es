@@ -3,7 +3,7 @@ TODO:
     - write about page
     - template
         - CSS basics
-        - fonts
+        - fonts (moved over)
         - header and footer layout
         - minimal support for mobile
             - scale the iframe down
