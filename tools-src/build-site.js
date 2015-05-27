@@ -9,6 +9,7 @@ let jn = require("path").join
 ,   sourceTree = require("./tasks/source-tree")
 ,   copyTree = require("./tasks/copy-tree")
 ,   copyStatic = require("./tasks/copy-static")
+,   processHTML = require("./tasks/process-html")
 ,   tree
 ;
 
@@ -19,6 +20,7 @@ sourceTree(contentDir)
     })
     .then(() => { return copyTree(siteDir, tree); })
     .then(() => { return copyStatic(contentDir, siteDir, tree); })
+    .then(() => { return processHTML(contentDir, siteDir, tree); })
     .then(() => {
         console.log("Ok!");
     })

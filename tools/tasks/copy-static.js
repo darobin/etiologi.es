@@ -6,7 +6,6 @@ var fs = require("fs-extra"),
 
 function copyStatic(from, to) {
     return new Promise(function (resolve, reject) {
-        console.log("copying " + from + " => " + to);
         fs.copy(from, to, function (err) {
             if (err) return reject();
             resolve();
