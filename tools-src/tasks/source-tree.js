@@ -1,16 +1,29 @@
 
-var findit = require("findit");
+let findit = require("findit")
+,   pth = require("path")
+;
 
-module.exports = function (root, cb) {
-    var finder = findit(root);
-    finder.on("directory", (file, stat) => {
-        console.log("D", file);
+function norm (root, file) {
+    return "./" + pth.relative(root, file);
+}
+
+module.exports = function (root) {
+    return new Promise((resolve, reject) => {
+        let finder = findit(root)
+        ,   tree = {}
+        ;
+        finder.on("directory", (file, stat) => {
+            tree[norm(root, file)] = stat;
+        });
+        finder.on("file", (file, stat) => {
+            tree[norm(root, file)] = stat;
+        });
+        finder.on("error", (err) => {
+            finder.stop();
+            reject(err);
+        });
+        finder.on("end", () => {
+            resolve(tree);
+        });
     });
-    finder.on("file", (file, stat) => {
-        console.log("F", file);
-        // if (stat.ctime.getTime() <= lastRun) return;
-        // if (pth.extname(file) === ".html") processHTML(file, pubPath(file));
-        // else copyFile(file, pubPath(file));
-    });
-    finder.on("end", cb);
 };

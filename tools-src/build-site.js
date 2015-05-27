@@ -1,12 +1,29 @@
 
-var jn = require("path").join
+// load up Babel
+require("babel/polyfill");
+
+let jn = require("path").join
 ,   rel = require("./utils/rel")(jn(__dirname, ".."))
+,   siteDir = rel("site")
 ,   sourceTree = require("./tasks/source-tree")
+,   copyTree = require("./tasks/copy-tree")
+,   tree
 ;
 
-sourceTree(rel("content"), (err, tree) => {
-    console.log(tree);
-});
+
+sourceTree(rel("content"))
+    .then((t) => {
+        tree = t;
+    })
+    .then(() => { return copyTree(siteDir, tree); })
+    .then(() => {
+        console.log("Ok!");
+    })
+    .catch((err) => {
+        console.error("BOOM", err);
+    })
+;
+
 
 // build output directory tree
 // copy all non-HTML
