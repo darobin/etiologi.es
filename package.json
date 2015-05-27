@@ -30,7 +30,7 @@
     "build-js": "npm run build-js-svg",
     "watch-js": "nodemon -e js --watch ./client-src/ --exec 'npm run build-js'",
     "build-site": "node ./tools/build-site.js",
-    "watch-site": "nodemon -e js,css,html --watch ./tools/ --watch ./content/ --exec 'npm run build-site'",
+    "watch-site": "nodemon -e js,css,html,png,jpg,svg --watch ./tools/ --watch ./content/ --exec 'npm run build-site'",
     "build": "npm run build-tools && npm run build-js && npm run build-css && npm run build-site",
     "watch": "npm run watch-tools & npm run watch-js & npm run watch-css & npm run watch-site"
   },

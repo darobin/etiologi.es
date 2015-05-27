@@ -5,11 +5,11 @@ TODO:
         ✓ CSS basics
         ✓ fonts (moved over)
         ✓ header and footer layout
-        - minimal support for mobile
-            - scale the iframe down
-            - position the title and nav differently
-            - add some margins for main
-        - favicon
+        ✓ minimal support for mobile
+            ✓ scale the iframe down
+            ✓ position the title and nav differently
+            ✓ add some margins for main
+        ✓ favicon
     - set up basics of build
         ✓ 6to5
         ✓ templating

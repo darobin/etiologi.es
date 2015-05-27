@@ -14,6 +14,7 @@ function processHTML(source, target) {
                 $body = $("body");
             // change head
             $("meta[charset]").after("<meta name=\"viewport\" content=\"width=device-width\">");
+            $title.after("<link rel='icon' href='/icon.png'>");
             $title.after("<link rel='stylesheet' href='/css/etiologies.css'>");
 
             // main
