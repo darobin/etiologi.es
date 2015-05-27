@@ -1,18 +1,18 @@
 
 TODO:
-    - write about page
+    ✓ write about page
     - template
-        - CSS basics
-        - fonts (moved over)
-        - header and footer layout
+        ✓ CSS basics
+        ✓ fonts (moved over)
+        ✓ header and footer layout
         - minimal support for mobile
             - scale the iframe down
             - position the title and nav differently
             - add some margins for main
         - favicon
     - set up basics of build
-        - 6to5
-        - templating
+        ✓ 6to5
+        ✓ templating
         - generating index page
         - news sources
     - start rsyncing
@@ -36,12 +36,14 @@ TODO:
     - the simplest s/b model
     - metrics on random graphs (http://arxiv.org/abs/1005.1397? SFI video Antoine Allard)
     - dimensions (time-like, space-like) on a graph through information theoretic notions
+    - reading list
+    - Calculus of Emergence implementations (ϵ-machines)
 
 BUILD SYSTEM:
-    - Babel
-    - Myth.io
-    - browserify
-    - nodemon
+    ✓ Babel
+    ✓ CleanCSS
+    ✓ browserify
+    ✓ nodemon
     - CSS built to hashed component, cached forever
     - JS built to several hashed components, depending on the page
         - need to support dependencies
@@ -74,7 +76,7 @@ ORGANISATION:
     - definitions can be linked to easily
 
 INFORMATION:
-    - about page with goals
+    ✓ about page with goals
         - short description of self
         - how to contribute
     - reading list
