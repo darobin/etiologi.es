@@ -38,7 +38,8 @@ TODO:
     - dimensions (time-like, space-like) on a graph through information theoretic notions
 
 BUILD SYSTEM:
-    - 6to5
+    - Babel
+    - Myth.io
     - browserify
     - nodemon
     - CSS built to hashed component, cached forever
@@ -76,6 +77,9 @@ INFORMATION:
     - about page with goals
         - short description of self
         - how to contribute
+    - reading list
+    - list of read books and papers, with summaries
+    - DFNs
 
 INSPIRATION:
     ✓ http://www.maartenlambrechts.be/the-rise-of-explorable-explanations/
@@ -93,4 +97,5 @@ INSPIRATION:
     - https://camdavidsonpilon.github.io/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers
     - http://bactra.org/notebooks/complex-networks.html
     - http://synaptic.juancazala.com/#
-
+    - http://burakkanber.com/blog/learn-to-embrace-dinkiness/
+    - http://worrydream.com/MediaForThinkingTheUnthinkable/
