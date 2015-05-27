@@ -43,7 +43,7 @@ nav li:first-of-type::before {
 a {
     text-decoration:  none;
     color:  #0e9063;
-    background: linear-gradient(transparent 0%, transparent 60%, #FCE391 65%, #FCE391 93%, transparent 95%);
+    background: linear-gradient(transparent 0%, transparent 60%, #fff 65%, #fdf3a1 93%, transparent 95%);
 }
 a:hover {
     text-decoration:  underline dotted #ff7000;
