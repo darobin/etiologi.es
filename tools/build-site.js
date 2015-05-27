@@ -6,15 +6,19 @@ require("babel/polyfill");
 
 var jn = require("path").join,
     rel = require("./utils/rel")(jn(__dirname, "..")),
+    contentDir = rel("content"),
     siteDir = rel("site"),
     sourceTree = require("./tasks/source-tree"),
     copyTree = require("./tasks/copy-tree"),
+    copyStatic = require("./tasks/copy-static"),
     tree = undefined;
 
-sourceTree(rel("content")).then(function (t) {
+sourceTree(contentDir).then(function (t) {
     tree = t;
 }).then(function () {
     return copyTree(siteDir, tree);
+}).then(function () {
+    return copyStatic(contentDir, siteDir, tree);
 }).then(function () {
     console.log("Ok!");
 })["catch"](function (err) {

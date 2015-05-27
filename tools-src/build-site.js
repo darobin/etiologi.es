@@ -4,18 +4,21 @@ require("babel/polyfill");
 
 let jn = require("path").join
 ,   rel = require("./utils/rel")(jn(__dirname, ".."))
+,   contentDir = rel("content")
 ,   siteDir = rel("site")
 ,   sourceTree = require("./tasks/source-tree")
 ,   copyTree = require("./tasks/copy-tree")
+,   copyStatic = require("./tasks/copy-static")
 ,   tree
 ;
 
 
-sourceTree(rel("content"))
+sourceTree(contentDir)
     .then((t) => {
         tree = t;
     })
     .then(() => { return copyTree(siteDir, tree); })
+    .then(() => { return copyStatic(contentDir, siteDir, tree); })
     .then(() => {
         console.log("Ok!");
     })

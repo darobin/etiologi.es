@@ -1,0 +1,90 @@
+
+/*
+    XXX this needs transformation because otherwise node_modules won't be found
+*/
+
+@import url("../node_modules/normalize.css/normalize.css");
+@import url("./fonts.css");
+
+body {
+    font-family:  Titillium;
+}
+iframe {
+    border: 0;
+    /* make this %age based */
+}
+header {
+    margin: auto;
+    max-width:  960px;
+}
+p.site-title {
+    text-align: right;
+    margin: -125px 50px 0 0;
+    font-size:  50px;
+    font-weight:  200;
+}
+nav ul {
+    list-style-type:  none;
+    text-align: right;
+    margin: 5px 40px 0 0;
+}
+nav li {
+    display:  inline-block;
+}
+nav li a {
+    display:  inline-block;
+    padding:  0 10px;
+    line-height:  1;
+    background: transparent;
+}
+nav li::before {
+    content:  "・";
+    color:  silver;
+}
+nav li:first-of-type::before {
+    content:  none;
+}
+a {
+    text-decoration:  none;
+    color:  #0e9063;
+    background: linear-gradient(transparent 0%, transparent 60%, #FCE391 65%, #FCE391 93%, transparent 95%);
+}
+a:hover {
+    text-decoration:  underline dotted #ff7000;
+}
+a:active {
+    color:  #ff7000;
+}
+/*
+a[href^="http"]::after {
+    content: "⇗";
+    color:  #ff7000;
+    vertical-align: super;
+    line-height:  0.5;
+}
+*/
+main {
+    max-width:  960px;
+    margin: 100px auto;
+}
+h1 {
+    font-weight:  200;
+}
+footer {
+    max-width:  960px;
+    margin: 100px auto 20px auto;
+    text-align: right;
+}
+footer p {
+    margin: 0;
+}
+.signature {
+    font-size:  20px;
+}
+.signature img {
+      vertical-align: -10px;
+      margin-right: -40px;
+}
+.license {
+    font-size:  12px;
+}
