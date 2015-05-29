@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>One-Dimensional Avalanche Piano Roll</title>
+  </head>
+  <body>
+    <p>
+      This project runs <a>avalanches</a> on one-dimensional, non-looping lattice, with varying
+      parameters. At every time step (when a grain of sand of dropped on the pile), all the 
+      avalanches that take place mark a bar of their extend on a line beneath the lattice, and the
+      line is moved down.
+    </p>
+    <p>
+      The idea is to see if it lends itself to some sort of analysis at that level.
+    </p>
+    <form>
+      <div class="form-line">
+        <label for="mode">Mode</label>
+        <select id="mode">
+          <option value="random">random</option>
+          <option value="single">single-slit</option>
+          <option value="double">double-slit</option>
+        </select>
+      </div>
+      <div class="form-line">
+        <label for="critical">Critical value</label>
+        <input type="number" id="critical" value="2">
+      </div>
+      <div class="form-line">
+        <label for="size">Lattice size</label>
+        <input type="number" id="size" value="480">
+      </div>
+      <div class="form-line actions">
+        <button id="run">Run</button>
+      </div>
+    </form>
+    <div>
+      <div id="drop-line"></div>
+      <div id="lattice-line"></div>
+      <div id="piano-roll"></div>
+    </div>
+    <script src="ui.js"></script>
+  </body>
+</html>

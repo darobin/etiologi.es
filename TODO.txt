@@ -15,7 +15,7 @@ TODO:
         ✓ templating
         - generating index page
         - news sources
-    - start rsyncing
+    ✓ start rsyncing
     - write SOC description
     - definition indexer
     - avalanches experiment
@@ -51,10 +51,6 @@ BUILD SYSTEM:
         - it should be possible to run complex computations in S3 or similar
     - definitions and cross-linking
 
-STYLE:
-    - reprise headers and text style from undefined
-    - and general decoration using patterns generated from http://riccardoscalco.github.io/textures
-
 PROJECTS:
     - SOC
         - reprise the demo for undefined
@@ -68,6 +64,14 @@ PROJECTS:
         - this might enable a tie-in with social evolution
     - WebLogo, port of NetLogo
     - see #etiologies in Evernote
+
+WRITING:
+    - how http://www.3quarksdaily.com/3quarksdaily/2015/05/how-informative-is-the-concept-of-biological-information.html can
+      be fixed by applying the epistemology in Calculi of Emergence
+    - actually write up a full epistemology, based on CoE and other assumptions. It is particularly
+      important to clarify the centrality of information and computation, with help notably from
+      The Annotated Turing and probably from Quantum Computing Since Democritus. It may be worth
+      pointing at issues with Deutsch's epistemology in Four Strands.
 
 ORGANISATION:
     - front page lists latest items and categorised items

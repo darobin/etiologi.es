@@ -31,8 +31,7 @@ function processHTML (source, target) {
                   <nav>
                     <ul>
                       <li><a href="/">home</a></li>
-                      <li><a href="/notes/">notes</a></li>
-                      <li><a href="/books/">books</a></li>
+                      <li><a href="/projects/">projects</a></li>
                       <li><a href="/about/">about</a></li>
                     </ul>
                   </nav>

@@ -1,0 +1,67 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="utf-8"><meta name="viewport" content="width=device-width">
+    <title>One-Dimensional Avalanche Piano Roll</title><link rel="stylesheet" href="/css/etiologies.css"><link rel="icon" href="/icon.png">
+  </head>
+  <body><header>
+                  <iframe src="/img/tree.svg" width="960" height="288"></iframe>
+                  <p class="site-title">Etiologies</p>
+                  <nav>
+                    <ul>
+                      <li><a href="/">home</a></li>
+                      <li><a href="/projects/">projects</a></li>
+                      <li><a href="/about/">about</a></li>
+                    </ul>
+                  </nav>
+                </header><main><h1>One-Dimensional Avalanche Piano Roll</h1>
+    <p>
+      This project runs <a>avalanches</a> on one-dimensional, non-looping lattice, with varying
+      parameters. At every time step (when a grain of sand of dropped on the pile), all the 
+      avalanches that take place mark a bar of their extend on a line beneath the lattice, and the
+      line is moved down.
+    </p>
+    <p>
+      The idea is to see if it lends itself to some sort of analysis at that level.
+    </p>
+    <form>
+      <div class="form-line">
+        <label for="mode">Mode</label>
+        <select id="mode">
+          <option value="random">random</option>
+          <option value="single">single-slit</option>
+          <option value="double">double-slit</option>
+        </select>
+      </div>
+      <div class="form-line">
+        <label for="critical">Critical value</label>
+        <input type="number" id="critical" value="2">
+      </div>
+      <div class="form-line">
+        <label for="size">Lattice size</label>
+        <input type="number" id="size" value="480">
+      </div>
+      <div class="form-line actions">
+        <button id="run">Run</button>
+      </div>
+    </form>
+    <div>
+      <div id="drop-line"></div>
+      <div id="lattice-line"></div>
+      <div id="piano-roll"></div>
+    </div>
+    <script src="ui.js"></script>
+  
+
+</main><footer>
+                  <p class="signature">
+                    <img src="/img/bug.svg" width="80" height="80" alt="Robin Berjon Logo">
+                    Robin Berjon
+                  </p>
+                  <p class="self-links">
+                    <a href="mailto:robin@berjon.com">robin@berjon.com</a> ・
+                    <a href="http://berjon.com/">http://berjon.com/</a> ・
+                    <a href="https://twitter.com/robinberjon">@robinberjon</a>
+                  </p>
+                  <p class="license">
+                    <a href="http://creativecommons.org/licenses/by/4.0/" rel="license">CC-BY</a>
+                  </p>
+                </footer></body></html>

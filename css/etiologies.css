@@ -85,6 +85,26 @@ footer p {
     font-size:  12px;
 }
 
+dt {
+    font-weight:    bold;
+}
+
+/* FORMS */
+form {
+    border: 1px solid #cbfd92;
+}
+.form-line {
+    padding:    5px 10px;
+}
+.form-line label {
+    font-weight:    bold;
+    display: block;
+}
+.form-line.actions {
+    text-align: right;
+    background: #cbfd92;
+}
+
 /* we can probably do better, and actually test on a mobile */
 @media (max-width: 1000px) {
     main {
