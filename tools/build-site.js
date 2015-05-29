@@ -12,6 +12,7 @@ var jn = require("path").join,
     copyTree = require("./tasks/copy-tree"),
     copyStatic = require("./tasks/copy-static"),
     processHTML = require("./tasks/process-html"),
+    buildProject = require("./tasks/build-project"),
     tree = undefined;
 
 sourceTree(contentDir).then(function (t) {
@@ -22,6 +23,8 @@ sourceTree(contentDir).then(function (t) {
     return copyStatic(contentDir, siteDir, tree);
 }).then(function () {
     return processHTML(contentDir, siteDir, tree);
+}).then(function () {
+    return buildProject(contentDir, siteDir, tree);
 }).then(function () {
     console.log("Ok!");
 })["catch"](function (err) {

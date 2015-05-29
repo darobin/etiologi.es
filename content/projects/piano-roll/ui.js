@@ -9,4 +9,4 @@ let $ = require("jquery")
 ,   $pianoRoll = $("#piano-roll")
 ;
 
-
+console.log("OMG it works!", $size.val());
