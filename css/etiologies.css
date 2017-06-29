@@ -91,7 +91,7 @@ dt {
 
 /* FORMS */
 form {
-    border: 1px solid #cbfd92;
+    border: 1px solid #0e9063;
 }
 .form-line {
     padding:    5px 10px;
@@ -102,7 +102,7 @@ form {
 }
 .form-line.actions {
     text-align: right;
-    background: #cbfd92;
+    background: #0e9063;
 }
 
 /* we can probably do better, and actually test on a mobile */
